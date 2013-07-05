@@ -1,0 +1,24 @@
+{
+    "name": "eddiejaoude/highcharts-php",
+    "description": "High Chart PHP Wrapper",
+    "authors": [
+        {
+            "name": "Eddie Jaoude",
+            "email": "eddie@jaoudestudios.com"
+        }
+    ],
+    "require": {
+  "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "HighCharts\\": "src"
+        },
+        "classmap": [
+            "Module.php"
+        ]
+    }
+}
