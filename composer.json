@@ -16,9 +16,6 @@
     "autoload": {
         "psr-0": {
             "HighCharts\\": "src"
-        },
-        "classmap": [
-            "Module.php"
-        ]
+        }
     }
 }
