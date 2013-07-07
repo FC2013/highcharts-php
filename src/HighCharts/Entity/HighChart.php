@@ -201,6 +201,21 @@ class HighChart
         return $this->chart;
     }
 
+    /**
+     * @return string
+     */
+    public function getJson()
+    {
+        $result = array();
+        $properties = get_object_vars($this);
+        foreach ($properties as $objectName => $property) {
+            if (is_object($property)) {
+                $result[$objectName] = $property->toArray();
+            }
+        }
+
+        return json_encode($result);
+    }
 
 
 }

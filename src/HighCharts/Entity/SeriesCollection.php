@@ -33,5 +33,18 @@ class SeriesCollection
         return $this->seriesCollection;
     }
 
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        $result = array();
+        foreach ($this->getSeriesCollection() as $series) {
+            $result[] = $series->toArray();
+        }
+
+        return $result;
+    }
+
 
 }

@@ -42,7 +42,7 @@ class Yaxis
      * @param Title $title
      * @return Yaxis
      */
-    public function setTitle($title)
+    public function setTitle(Title $title)
     {
         $this->title = $title;
 
@@ -57,5 +57,20 @@ class Yaxis
         return $this->title;
     }
 
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        $result = array();
+        $properties = get_object_vars($this);
+        foreach ($properties as $objectName => $property) {
+            if (is_object($property)) {
+                $result[$objectName] = $property->toArray();
+            }
+        }
+
+        return $result;
+    }
 
 }

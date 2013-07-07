@@ -39,9 +39,17 @@ class Xaxis
      */
     public function addCategory($category)
     {
-        $this->categories[] = $category;
+        $this->categories[] = (string) $category;
 
         return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return get_object_vars($this);
     }
 
 

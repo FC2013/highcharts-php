@@ -81,7 +81,13 @@ class Chart
         return $this->type;
     }
 
-
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return get_object_vars($this);
+    }
 
 
 }
