@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "HighCharts\\Entity": "src/Entities"
+            "HighCharts\\Entity": "src/Entity"
         }
     }
 }
