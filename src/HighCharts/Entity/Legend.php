@@ -12,27 +12,27 @@ class Legend
     /**
      * @var string
      */
-    protected $layout = 'vertical';
+    protected $layout = 'horizontal';
 
     /**
      * @var string
      */
-    protected $align = 'right';
+    protected $align = 'center';
 
     /**
      * @var int
      */
-    protected $x = -10;
+    protected $x = 0;
 
     /**
      * @var int
      */
-    protected $y = 100;
+    protected $y = 15;
 
     /**
      * @var int
      */
-    protected $borderWidth = 0;
+    protected $borderWidth = 1;
 
     /**
      * @param string $align

@@ -12,17 +12,22 @@ class Chart
     /**
      * @var string
      */
-    protected $type = '';
+    protected $type = 'line';
+
+    /**
+     * @var string
+     */
+    protected $zoomType = 'x';
 
     /**
      * @var int
      */
-    protected $marginRight = 130;
+    protected $marginRight = 10;
 
     /**
      * @var int
      */
-    protected $marginBottom = 25;
+    protected $marginBottom = 50;
 
     /**
      * @param int $marginBottom
@@ -88,6 +93,26 @@ class Chart
     {
         return get_object_vars($this);
     }
+
+    /**
+     * @param string $zoomType
+     * @return Chart
+     */
+    public function setZoomType($zoomType)
+    {
+        $this->zoomType = (string) $zoomType;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getZoomType()
+    {
+        return $this->zoomType;
+    }
+
 
 
 }

@@ -15,6 +15,16 @@ class Series
     protected $name;
 
     /**
+     * @var int
+     */
+    //protected $pointStart = 0;
+
+    /**
+     * @var int
+     */
+    //protected $pointInterval = 0;
+
+    /**
      * @var array
      */
     protected $data = array();
@@ -64,6 +74,44 @@ class Series
     {
         return get_object_vars($this);
     }
+
+//    /**
+//     * @param int $pointInterval
+//     * @return Series
+//     */
+//    public function setPointInterval($pointInterval)
+//    {
+//        $this->pointInterval = (int) $pointInterval;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * @return int
+//     */
+//    public function getPointInterval()
+//    {
+//        return $this->pointInterval;
+//    }
+//
+//    /**
+//     * @param int $pointStart
+//     * @return Series
+//     */
+//    public function setPointStart($pointStart)
+//    {
+//        $this->pointStart = (int) $pointStart;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * @return int
+//     */
+//    public function getPointStart()
+//    {
+//        return $this->pointStart;
+//    }
 
 
 }
